@@ -1,5 +1,8 @@
 #!/usr/bin/zsh
 
+# additional history stuff
+setopt share_history
+
 # editor
 export EDITOR=vi
 export VISUAL=vi
