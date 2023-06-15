@@ -12,6 +12,7 @@
     source "${dir}/fixes.zsh"
     source "${dir}/key-bindings.zsh"
     source "${dir}/supercharge.zsh"
+    source "${dir}/command-not-found.zsh"
 
     source "${dir}/p10k-config.zsh"
 }
