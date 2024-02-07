@@ -15,5 +15,5 @@ This plugin uses some code snippets from the following projects
 To install Zap and the required dependencies along with this plugin run:
 
 ```zsh
-zsh <(curl -s https://raw.githubusercontent.com/volksdaniel/zsh-ron/main/install.zsh)
+zsh <(curl -s https://raw.githubusercontent.com/volkarts-dev/zsh-ron/main/install.zsh)
 ```
