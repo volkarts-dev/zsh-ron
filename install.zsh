@@ -30,13 +30,13 @@ main() {
 [ -f "$HOME/.local/share/zap/zap.zsh" ] && source "$HOME/.local/share/zap/zap.zsh"
 
 plug "zsh-users/zsh-autosuggestions" "v0.7.0"
-plug "zsh-users/zsh-syntax-highlighting" "754cefe0181a7acd42fdcb357a67d0217291ac47"
-plug "zap-zsh/supercharge" "979d4cbbd53435f5dda65ebfd324d7ad80987ad4"
+plug "zsh-users/zsh-syntax-highlighting" "0.8.0"
+plug "zap-zsh/supercharge" "e76f4e82d443706c2d9c8ab8e9633facbcdec768"
 plug "zap-zsh/sudo" "b3e86492d6d48c669902b9fb5699a75894cfcebc"
 
 plug "DerSauron/zsh-ron"
 
-plug "romkatv/powerlevel10k" "v1.18.0"
+plug "romkatv/powerlevel10k" "v1.20.0"
 EOF
 
     # check if ZAP_DIR already exists
