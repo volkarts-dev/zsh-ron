@@ -26,5 +26,5 @@ function setup_paths()
     source "${zr_plugin_dir}/last-dir.zsh"
     source "${zr_plugin_dir}/command-not-found.zsh"
 
-    source "${zr_plugin_dir}/p10k-config.zsh"
+    source "${zr_plugin_dir}/oh-my-posh.zsh"
 }

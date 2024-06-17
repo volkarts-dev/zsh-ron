@@ -1,7 +1,7 @@
 #!/usr/bin/env zsh
 
-main() {
-
+main()
+{
     local DATE=$(date +%Y-%m-%d)
     local ID=$(date +%s)
     local NEW_ZSHRC=".zshrc_${DATE}_${ID}"
@@ -23,7 +23,6 @@ main() {
         touch "$ZSHRC"
     fi
 
-
     cat >"$ZSHRC" <<EOF
 # Created by Ron's Zap installer
 
@@ -35,8 +34,6 @@ plug "zap-zsh/supercharge" "e76f4e82d443706c2d9c8ab8e9633facbcdec768"
 plug "zap-zsh/sudo" "b3e86492d6d48c669902b9fb5699a75894cfcebc"
 
 plug "DerSauron/zsh-ron"
-
-plug "romkatv/powerlevel10k" "v1.20.0"
 EOF
 
     # check if ZAP_DIR already exists
