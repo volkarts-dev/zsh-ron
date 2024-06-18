@@ -1,5 +1,3 @@
-#!/usr/bin/zsh
-
 autoload -U add-zsh-hook
 
 function _make_cache_file()

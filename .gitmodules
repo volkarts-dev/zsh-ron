@@ -1,0 +1,9 @@
+[submodule "extern/zsh-syntax-highlighting"]
+	path = extern/zsh-syntax-highlighting
+	url = https://github.com/zsh-users/zsh-syntax-highlighting
+[submodule "extern/zsh-autosuggestions"]
+	path = extern/zsh-autosuggestions
+	url = https://github.com/zsh-users/zsh-autosuggestions
+[submodule "extern/powerlevel10k"]
+	path = extern/powerlevel10k
+	url = https://github.com/romkatv/powerlevel10k.git

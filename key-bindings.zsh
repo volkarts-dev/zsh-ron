@@ -1,5 +1,3 @@
-#!/usr/bin/zsh
-
 # copyright oh-my-zsh contributers
 #
 # http://zsh.sourceforge.net/Doc/Release/Zsh-Line-Editor.html
