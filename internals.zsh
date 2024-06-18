@@ -1,35 +1,33 @@
 # internal zshr command
 
+ZSH_RON_DIR="${0:A:h}"
+
 function _zshr_update()
-{
-    local zsh_ron_dir="${0:A:h}"
+(   # spawn a subshell
+    cd "${ZSH_RON_DIR}"
 
-    (
-        cd "${zsh_ron_dir}"
+    echo "Update zsh-ron..."
 
-        echo "Update zsh-ron..."
+    git fetch origin >/dev/null
+    if [ $? -ne 0 ]; then
+        echo "Failed to update zsh-ron" >&2
+        exit 1
+    fi
 
-        git fetch origin >/dev/null
-        if [ $? -ne 0 ]; then
-            echo "Failed to update zsh-ron" >&2
-            exit 1
-        fi
+    git merge origin/main >/dev/null
+    if [ $? -ne 0 ]; then
+        echo "Failed to update zsh-ron" >&2
+        exit 1
+    fi
 
-        git merge origin/main >/dev/null
-        if [ $? -ne 0 ]; then
-            echo "Failed to update zsh-ron" >&2
-            exit 1
-        fi
+    git submodule update --init >/dev/null
+    if [ $? -ne 0 ]; then
+        echo "Failed to update zsh-ron" >&2
+        exit 1
+    fi
 
-        git submodule update --init >/dev/null
-        if [ $? -ne 0 ]; then
-            echo "Failed to update zsh-ron" >&2
-            exit 1
-        fi
-
-        echo "Successfully updated"
-    )
-}
+    echo "Successfully updated"
+)
 
 function _zshr_help()
 {
