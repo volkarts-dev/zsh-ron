@@ -1,6 +1,6 @@
 # internal zshr command
 
-function _zap_update()
+function _zshr_update()
 {
     local zsh_ron_dir="${0:A:h}"
 
@@ -31,7 +31,7 @@ function _zap_update()
     )
 }
 
-function _zap_help()
+function _zshr_help()
 {
     echo "zsh-ron - Help
 
@@ -49,5 +49,5 @@ function zshr()
         update "_zshr_update"
     )
     emulate -L zsh
-    [[ -z "$subcmds[$1]" ]] && { _zap_help; return 1 } || ${subcmds[$1]} $2
+    [[ -z "$subcmds[$1]" ]] && { _zshr_help; return 1 } || ${subcmds[$1]} $2
 }
