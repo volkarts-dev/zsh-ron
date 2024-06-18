@@ -26,7 +26,7 @@ function _zshr_update()
         exit 1
     fi
 
-    echo "Successfully updated"
+    echo "Successfully updated - Restart zsh to apply changes"
 )
 
 function _zshr_help()
