@@ -1,9 +1,6 @@
 # ron's plugin
 # all that's needed for using zsh
 
-# requires
-# -
-
 function setup_paths()
 {
     zr_plugin_dir="${${(%):-%x}:a:h}"
@@ -30,4 +27,6 @@ function setup_paths()
     source "${zr_plugin_dir}/internals.zsh"
 
     source "${zr_plugin_dir}/p10k-config.zsh"
+
+    source "${zr_plugin_dir}/user.zsh"
 }
